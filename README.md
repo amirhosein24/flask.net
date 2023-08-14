@@ -19,7 +19,11 @@ after calling the main function it will create a server that can be called with 
     "circles": [
         { "radius": 5 },
         { "radius": 10 },
-        { "radius": 15 }
+        { "radius": 3 },
+        { "radius": 1 },
+        { "radius": 90 },
+        { "radius": 13 },
+        { "radius": 563 }
     ]
     }
 
