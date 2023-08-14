@@ -1,7 +1,7 @@
 {
-  "circles": [
-      { "radius": 5 },
-      { "radius": 10 },
-      { "radius": 15 }
-  ]
+    "circles": [
+        { "radius": 5 },
+        { "radius": 10 },
+        { "radius": 15 }
+    ]
 }

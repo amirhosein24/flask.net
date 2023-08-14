@@ -1,5 +1,4 @@
 from flask import Flask
-import json_data
 
 app = Flask(__name__)
 
@@ -15,7 +14,11 @@ def square(num):
 
 @app.route('/circle')
 def circle_area():
+    import json_data
+    import time
+
     json_data.update_json_file("data.json")
+    time.sleep(3)
     return "circle area calculated and stored in data.json"
 
 
