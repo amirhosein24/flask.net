@@ -20,5 +20,8 @@ def circle_area():
     return "circle area calculated and stored in data.json" 
 
 
-if __name__ == '__main__':
-    app.run()
+@app.route('/hi/<string:name>')
+def hi(name):
+    return f"hi {name}, how are you doing today ?"
+
+app.run()
