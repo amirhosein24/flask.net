@@ -17,3 +17,6 @@ def update_json_file(file_path):
         file.seek(0)
         json.dump(data, file, indent=4)
         file.truncate()
+    with open(file_path, 'r') as file:
+        n_data = json.load(file)
+        return n_data

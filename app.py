@@ -17,8 +17,7 @@ def say_hi(name):
 @app.route('/circle')
 def circle_area():
     import json_data
-    json_data.update_json_file(__file__[:-6] + "data.json")
-    return "circle area calculated and stored in data.json" 
+    data = json_data.update_json_file(__file__[:-6] + "data.json")
+    return "circle area calculated and stored in data.json === " + str(data)
 
-if __name__ == '__main__':
-    app.run()
+app.run()
