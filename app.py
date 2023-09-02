@@ -5,6 +5,8 @@ app = flask.Flask(__name__)
 def hello():
     return "Hello, World!\nmain window"
 
+print("testttt")
+
 @app.route('/square/<int:num>')
 def square(num):
     result = num * num
