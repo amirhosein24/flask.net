@@ -1,4 +1,4 @@
-import json
+from json import load, dump
 
 def calculate_circle_properties(radius):
     area = 3.14159 * (radius ** 2)
@@ -7,7 +7,7 @@ def calculate_circle_properties(radius):
 
 def update_json_file(file_path):
     with open(file_path, 'r+') as file:
-        data = json.load(file)  
+        data = load(file)  
         circles = data['circles']
         for circle in circles:
             radius = circle['radius']
@@ -15,8 +15,8 @@ def update_json_file(file_path):
             circle['area'] = area
             circle['circumference'] = circumference
         file.seek(0)
-        json.dump(data, file, indent=4)
+        dump(data, file, indent=4)
         file.truncate()
     with open(file_path, 'r') as file:
-        n_data = json.load(file)
+        n_data = load(file)
         return n_data
