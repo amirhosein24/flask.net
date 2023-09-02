@@ -20,4 +20,5 @@ def circle_area():
     data = json_data.update_json_file(__file__[:-6] + "data.json")
     return "circle area calculated and stored in data.json === " + str(data)
 
-app.run()
+if __name__ == "__main__":
+    app.run()
