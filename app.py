@@ -23,4 +23,4 @@ def circle_area():
     return "circle area calculated and stored in data.json === " + str(data)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
